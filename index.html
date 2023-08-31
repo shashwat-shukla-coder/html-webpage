@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./desk-593327_640.jpg">
+</head>
+<body>
+<style>
+    html{
+        scroll-behavior:smooth;
+    }
+
+    img {
+    float:none;
+    width:  300px;
+    height: 250px;
+    object-fit:contain;
+    
+}
+   body{
+    background-image: url(./sao.jpg);
+    background-size: cover;
+   }
+</style>
+<script>
+    function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>
+<marquee behavior="" direction="left"><h1>welcome to my 1st try at a  webpage</h1></marquee>
+<hr><br>
+<div>
+    <fieldset style="width: 430px;"">
+        <legend> <h3>table of contents</h3></legend>
+    <ul>
+        <h3><li id="1st"><a href="#sec1">about</a></li>
+        <li id="2nd"><a href="#sec2">products</a></li>
+        <li id="3rd"><a href="#sec3">tech</a></li>
+        <li id="4th"><a href="#sec4">videos</a></li></h3>
+    </ul>
+</fieldset><br>
+</div>
+<div><img draggable="true" src="./artificial-intelligence-4389372_640.jpg" alt="funn" height="30%px" width="15%px">
+</div>
+<br>
+<fieldset style="width: 0px;">
+<table>
+    <form>
+        
+            <legend><h3>User details</h3></legend>
+            <tr>
+                <td><label for="t1"></label>user name</td>
+                <td><input type="text" id="t1"></td>
+            </tr>
+            <tr>
+                <td><label for="myInput">password</label></td>
+                <td><input type="password" id="myInput"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" onclick="myFunction()">Show Password</td></tr>
+                <tr>
+                    <td></td>
+                    <td><input type="reset" name="button" id="res"></td>
+                </tr>
+                <td><br></td>
+            <tr>
+                <td><output><b>gender</b></output></td>
+                <tr></tr>
+                <td><label for="m">male</label>
+                <input type="radio" name="m">
+                <label for="m">female</label>
+                <input type="radio"name="m"></td>
+            </tr>
+            <td></td>
+            <tr>
+                <td><output><b>income source</b></output></td>
+                <tr></tr>
+                <td><label for="check">service</label>
+                    <input type="checkbox" name=check" id="check">
+                
+                    <label for="c">buisness</label>
+                    <input type="checkbox" id="c">
+                </td>
+            </tr><td><br></td>
+            <tr>
+                <td><b>select country</b></output>
+                   <select name="country" id="country" >
+                        <option value="india">india</option>
+                        <option value="america">america</option>
+                        <option value="china">china</option>
+                        <option value="russia">russia</option>
+                   </select>
+                </td>
+            </tr>
+           <td><br></td>
+            <tr>
+                <td>select age <input type="number" max="100" min="0"></td>
+                
+            </tr>
+            <tr>
+                <td><br><u>upload resume file</u> <br><br>  <input type="file" ></td>
+            </tr>
+            <td></td>
+            <tr>
+                <td><input type="submit">sumit</td>
+            </tr>
+    </form>
+</table>
+</fieldset>
+<br>
+<div id="sec1">
+    <h2><b>About</b></h2>
+    <h4><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi assumenda incidunt, quaerat deleniti sequi unde repellat atque optio, velit blanditiis deserunt quasi id. Reprehenderit, saepe doloremque ipsam soluta at dicta!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui unde non, voluptates corporis, aspernatur sequi eos quod accusantium temporibus rem in! Ipsa explicabo enim, facilis tenetur mollitia blanditiis asperiores laudantium.</p>
+    <details>
+        <summary>how do we operate</summary>
+        <p>by simple html right now and inline css</p>
+    </details>
+    <details>
+        <summary>how do we operate</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat illum a repellendus mollitia qui doloribus ullam libero dicta ea illo, reiciendis consectetur iste, quasi tenetur veritatis aliquam voluptatibus? Iusto, ex.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ratione reprehenderit vero vel minus, illum mollitia commodi eum similique distinctio dignissimos aliquam sunt at rerum dolor, a debitis eaque porro.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti facere culpa, at repellendus quae alias repudiandae fugit rem praesentium iusto sed quaerat dolorem eos, ullam numquam quod nulla obcaecati eius.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error tempore minima quod? Quidem, corrupti consequatur sapiente ratione delectus dignissimos suscipit adipisci praesentium eaque explicabo a. Iste quibusdam sunt aut sed.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus perspiciatis aliquid voluptate labore doloribus facere recusandae assumenda dolorum adipisci tenetur mollitia perferendis vitae, quae accusantium ipsum error iste est repudiandae.</p>
+    </h4>
+    </details>
+    <br><br><br>
+</div>
+
+<div id="sec2">
+    <h2><b>products</b></h2>
+    <br><br>
+    <a href="./desk-593327_640.jpg" target="_blank"><img src="./desk-593327_640.jpg" alt=""><br>laptop</a>
+    <br>
+    <a href="./processor-2217771_640.jpg" target="_blank" ><img src="./processor-2217771_640.jpg" alt=""><br>processor</a>
+    <br>
+    <a href="./cyber-2377718_640.jpg" target="_blank"><img src="./cyber-2377718_640.jpg" alt=""><br>graphics card</a>
+    <br>
+    <a href="./nvidia-5264921_1280.jpg" target="_blank"><img src="./nvidia-5264921_1280.jpg" alt=""><br>GPU</a>
+    <br>
+</div>
+<hr>
+<br>
+<div id="sec3">
+    <h2><b>Technology updates</b></h2>
+    <br>
+    <ul>
+        <h4><li>some text</li>
+            <ul>
+                <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem incidunt quisquam nostrum qui possimus. Itaque modi nostrum unde veritatis esse reprehenderit temporibus beatae odio cum non. Ut blanditiis nihil corporis.</p></li>
+                <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur pariatur id aliquid veritatis, illum hic maiores sit rem laborum, ea accusamus delectus! Aspernatur, omnis. Illum aliquam est nesciunt nam ipsum?</p></li>
+            </ul>
+        <li>some text</li>
+        <ul>
+            <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem incidunt quisquam nostrum qui possimus. Itaque modi nostrum unde veritatis esse reprehenderit temporibus beatae odio cum non. Ut blanditiis nihil corporis.</p></li>
+            <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur pariatur id aliquid veritatis, illum hic maiores sit rem laborum, ea accusamus delectus! Aspernatur, omnis. Illum aliquam est nesciunt nam ipsum?</p></li>
+        </ul>
+        <li>some text</li>
+        <ul>
+            <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem incidunt quisquam nostrum qui possimus. Itaque modi nostrum unde veritatis esse reprehenderit temporibus beatae odio cum non. Ut blanditiis nihil corporis.</p></li>
+            <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur pariatur id aliquid veritatis, illum hic maiores sit rem laborum, ea accusamus delectus! Aspernatur, omnis. Illum aliquam est nesciunt nam ipsum?</p></li>
+        </ul>c
+    </h4>
+    </ul>
+</div>
+    <br><hr><br>
+    <div id="sec4">
+        <h2>VIDEOS</h2><br>
+        <p><h3><b>using NCS vids for practice purpose</b></h3></p><br>
+
+        <iframe src="https://www.youtube.com/embed/Y9NOqPWMyvI" frameborder="0"></iframe>
+        <br>
+        <iframe src="https://www.youtube.com/embed/AO8i0IuM0G4" frameborder="0"></iframe>
+        <br>
+        <iframe src="https://www.youtube.com/embed/gdnzYaTcypw" frameborder="0"></iframe>
+    </div>
+</div>
+<br>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</body>
+</html>
